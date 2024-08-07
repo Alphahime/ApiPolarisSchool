@@ -41,4 +41,8 @@ Route::middleware('auth:api')->group(function () {
     Route::post('/ues', [UEController::class, 'store']);
     Route::put('/ues/{id}', [UEController::class, 'update']);
     Route::delete('/ues/{id}', [UEController::class, 'destroy']);
+
+    Route::post('/evaluations', [EvaluationController::class, 'store']);
+    Route::put('/evaluations/{id}', [EvaluationController::class, 'update']);
+    Route::delete('/evaluations/{id}', [EvaluationController::class, 'destroy']);
 });
